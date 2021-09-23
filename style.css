@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+
+body {
+    background-color: #e0e0e0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.input-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 70%;
+    border: none;
+    height: 2em;
+    border-radius: 5px;
+    font-family: 'Chilanka', cursive;
+    font-weight: 600;
+    font-size: 2em;
+    color: #AAAAAA;
+    border: 1px solid white;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 2px 2px 6px #bebebe,
+        -2px -2px 6px #ffffff;
+}
+
+.input:focus {
+    border: none;
+}
+
+.input:active {
+    border: none;
+}
+
+.main {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    border: 7px solid rgb(235, 234, 234);
+    background: #e0e0e0;
+    box-shadow: inset -1px -1px 4px #bebebe,
+        inset 1px 1px 4px #ffffff;
+}
+
+.common-btn {
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+    background: #e0e0e0;
+    border: 1px solid #dbd9d9;
+    box-shadow: inset -3px -3px 6px #bebebe,
+        inset 3px 3px 6px #ffffff;
+}
+
+.cylinder {
+    width: 60px;
+    height: 25px;
+}
+
+.act-click:active {
+    box-shadow: inset 2px 2px 6px #bebebe,
+        inset 2px 2px 6px #ffffff;
+    color: black;
+
+}
+
+.active {
+    box-shadow: inset 2px 2px 6px #bebebe,
+        inset 2px 2px 6px #ffffff;
+    color: black;
+}
+
+
+.back-tilt {
+    height: 52px;
+    width: 40px;
+}
+
+
+.num-btn {
+    width: 40px;
+    height: 52px;
+}
+
+.backspace-btn {
+    width: 150px;
+    height: 52px;
+}
+
+.num-first-row {
+    width: 40px;
+    height: 25px;
+
+}
+
+.normal-btn {
+    width: 60px;
+    height: 52px;
+}
+
+.tab-btn {
+    width: 82px;
+    height: 52px;
+}
+
+.backslash-btn {
+    width: 105px;
+    height: 52px;
+}
+
+.space-btn {
+    width: 368px;
+    height: 52px;
+}
+
+.caps-btn {
+    width: 120px;
+    height: 52px;
+}
+
+.enter-btn {
+    width: 138px;
+    height: 52px;
+}
+
+.shift-btn {
+    width: 165px;
+    height: 52px;
+}
+
+.left {
+    margin-left: 22px;
+}
+
+.right {
+    margin-right: 30px;
+}
+
+.up {
+    position: relative;
+}
+
+.arrow-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 14px;
+}
+
+.up-down-sectoin {
+    position: relative;
+    bottom: 16px;
+}
+
+.label {
+    position: relative;
+    top: -6px;
+    left: 17px;
+    font-size: 0.680em;
+    color: #aca9a9;
+}
+
+.label-fn {
+    left: 23px;
+}
+
+.alpa-label {
+    position: relative;
+    top: -7px;
+    left: 20px;
+    font-size: 1.275em;
+    color: #aca9a9;
+}
+
+.small-font {
+    font-size: 1em;
+    top: -1px;
+    left: 18px;
+}
+
+.tilt {
+    left: 12px;
+}
+
+.left-arrow {
+    position: relative;
+    top: -10px;
+}
+
+.arrow {
+    position: relative;
+    top: -10px;
+    left: 23px;
+    font-size: 0.8em;
+}
+
+.num-label {
+    position: relative;
+    top: -7px;
+    left: 13px;
+    font-size: 1.275em;
+    color: #aca9a9;
+}
+
+.num-1-label {
+    position: relative;
+    top: -16px;
+    left: 13px;
+    font-size: 1.275em;
+    color: #aca9a9;
+}
+
+.divide {
+    top: -20px;
+}
