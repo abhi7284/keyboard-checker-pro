@@ -240,3 +240,8 @@ body {
 .divide {
     top: -20px;
 }
+
+
+p:active{
+    transform: scale(0.99, 0.99);
+}
