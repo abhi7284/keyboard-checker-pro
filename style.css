@@ -12,13 +12,14 @@ body {
     align-items: center;
 }
 
+
 .input {
     width: 70%;
     border: none;
     height: 2em;
     border-radius: 5px;
-    font-family: 'Chilanka', cursive;
-    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
     font-size: 2em;
     color: #AAAAAA;
     border: 1px solid white;
@@ -26,6 +27,7 @@ body {
     box-shadow: 2px 2px 6px #bebebe,
         -2px -2px 6px #ffffff;
 }
+
 
 .input:focus {
     border: none;
@@ -43,7 +45,7 @@ body {
 }
 
 .main-container {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +62,7 @@ body {
     display: inline-block;
     padding: 10px;
     border-radius: 20px;
-    border: 7px solid rgb(235, 234, 234);
+    border: 6px solid rgb(235, 234, 234);
     background: #e0e0e0;
     box-shadow: inset -1px -1px 4px #bebebe,
         inset 1px 1px 4px #ffffff;
@@ -87,14 +89,16 @@ body {
     box-shadow: inset 2px 2px 6px #bebebe,
         inset 2px 2px 6px #ffffff;
     color: black;
-
 }
 
 .active {
     box-shadow: inset 2px 2px 6px #bebebe,
         inset 2px 2px 6px #ffffff;
     color: black;
+    font-size: 104%;
+    background-color: #BBEAA6;
 }
+
 
 
 .back-tilt {
@@ -242,6 +246,145 @@ body {
 }
 
 
-p:active{
+p:active {
     transform: scale(0.99, 0.99);
+}
+
+div .common-btn:active {
+    transform: scale(0.99, 0.99);
+}
+
+.header {
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: #868383;
+}
+
+.header:active {
+    transform: none;
+}
+
+.sub-heading {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: #868383;
+}
+
+.sub-heading:active {
+    transform: none;
+}
+
+footer {
+    text-align: center;
+}
+
+.container2 {
+    margin: 0 10%;
+    padding: 20px;
+
+}
+
+.container3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: inset -1px -1px 4px #bebebe,
+        inset 1px 1px 4px #ffffff;
+}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+}
+
+.flex-container>div {
+    margin: 10px;
+    text-align: center;
+}
+
+.heading3 {
+    margin-bottom: 10px !;
+    font-size: 20px;
+    color: #7a9e69;
+}
+
+.footer {
+    border-top: #757988;
+    padding: 30px 2.45rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 0;
+    margin-top: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.cssbuttons-io-button {
+    margin-top: 20px ;
+    font-family: 'Courier New', Courier, monospace;
+    background: #bebebe;
+    color: white;
+    padding: 0.35em;
+    padding-left: 1.4em;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #e4e3e3;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+    background: bebebe;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #bebebe;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
 }
