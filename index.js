@@ -136,6 +136,7 @@ window.addEventListener('keydown', function (e) {
 
     if (e.keyCode == 65) {
         $("#a").addClass("active");
+        console.log("A")
         
     }
     if (e.keyCode == 66) {

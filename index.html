@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
+    <title>Keyboard Checker Pro</title>
 </head>
 
 <body>
@@ -335,6 +336,9 @@
             </div>
         </div>
     </div>
+    <div class="container" style="display: none;">
+        <a href="#" onclick=checkKeyboard()>Check</a>
+    </div>
     <div class="container2" style="display: none;">
         <button class="cssbuttons-io-button">
             Buy me Coffee
@@ -358,15 +362,48 @@
             </div>
         </button>
     </div>
-    <footer class="footer">
+    <footer class="footer" style="display: none;">
         <div class="">
             <span class="">Copyright © 2023. <a href="#">keyboard checker pro</a>
                 All rights reserved.</span><br>
-            <span class="">Hand-crafted &amp; made with ❤️</span>
+            <span class="" style="display: none;">Hand-crafted &amp; made with ❤️</span>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./index.js"></script>
+    <script>
+        function checkKeyboard(element) {
+            console.log("clicked")
+            // Create a new KeyboardEvent with the specified key
+            var event = new KeyboardEvent('keypress', {
+                key: 'a',
+                code: 'KeyA',
+                keyCode: 65,
+                charCode: 97,
+                which: 65,
+                // Add other properties as needed
+            });
+
+            // Dispatch the event to trigger the key press
+            document.dispatchEvent(event);
+
+        };
+
+        // Function to trigger a key press event
+        function triggerKeyPressEvent(keyCode) {
+            var event = new Event('keydown');
+            console.log("keydown pressed")
+
+            // Set the keyCode property based on the provided value
+            event.keyCode = keyCode;
+
+            // Dispatch the event
+            document.dispatchEvent(event);
+        }
+
+        // Example: Trigger a key press event for the 'A' key (keyCode 65)
+        triggerKeyPressEvent(65);
+    </script>
 
 </body>
 
